@@ -31,7 +31,6 @@ const getAllStoresPaginated = async () => {
 
     console.log(`Total de filiais carregadas: ${allStores.length}`);
 
-    // No final da função getAllStoresPaginated
     fs.writeFileSync('filiais.json', JSON.stringify(allStores, null, 2), 'utf-8');
     console.log('Arquivo filiais.json salvo com sucesso.');
 
